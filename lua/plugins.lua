@@ -111,11 +111,43 @@ require("lazy").setup({
         "voldikss/vim-floaterm"
     },
     {
-        "neoclide/coc.nvim",
-        branch = "release"
+        "udalov/kotlin-vim"
     },
     {
-        "udalov/kotlin-vim"
+        "williamboman/mason.nvim",
+        config = function()
+            require("config.mason")
+        end,
+    },
+    {
+        "williamboman/mason-lspconfig.nvim"
+    },
+    {
+        "neovim/nvim-lspconfig",
+        config = function()
+            require("config.nvim-lspconfig")
+        end,
+    },
+    {
+        "hrsh7th/nvim-cmp",
+        config = function()
+            require("config.nvim-cmp")
+        end,
+        dependencies = {
+            "onsails/lspkind.nvim",
+            "hrsh7th/cmp-vsnip",
+            "hrsh7th/vim-vsnip",
+            "hrsh7th/cmp-cmdline",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-nvim-lsp"
+        }
+    },
+    {
+        "nvimdev/lspsaga.nvim",
+        config = function()
+            require("config.lspsaga")
+        end
     },
 
     -- colorschemes
