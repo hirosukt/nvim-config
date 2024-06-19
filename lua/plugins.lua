@@ -94,40 +94,6 @@ require("lazy").setup({
         event = "VeryLazy" 
     },
     {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-            "neovim/nvim-lspconfig",
-            "hrsh7th/cmp-nvim-lsp",
-            "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-path",
-            "hrsh7th/cmp-cmdline",
-            "onsails/lspkind.nvim",
-            "hrsh7th/cmp-emoji"
-        },
-        event = "VeryLazy",
-        config = function()
-            require("config.nvim-cmp")
-        end,
-    },
-    {
-        "nvimdev/lspsaga.nvim",
-        config = function()
-            require("config.lspsaga")
-        end,
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter",
-            "nvim-tree/nvim-web-devicons"
-        }
-    },
-    {
-        "williamboman/mason.nvim",
-        config = true
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        config = true
-    },
-    {
         "tyru/open-browser.vim",
         enabled = function()
             if vim.g.is_win or vim.g.is_mac then
@@ -143,6 +109,13 @@ require("lazy").setup({
     },
     {
         "voldikss/vim-floaterm"
+    },
+    {
+        "neoclide/coc.nvim",
+        branch = "release"
+    },
+    {
+        "udalov/kotlin-vim"
     },
 
     -- colorschemes

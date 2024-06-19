@@ -17,3 +17,10 @@ keymap.set("n", "<C-x>", "<cmd>bprevious <bar> bdelete #<cr>", {
 })
 
 keymap.set("n", "<leader>t", "<Cmd>FloatermToggle<CR>")
+
+keymap.set("n", "gd", "<Plug>(coc-definition)")
+keymap.set("n", "gy", "<Plug>(coc-type-=definition)")
+keymap.set("n", "gi", "<Plug>(coc-implementation)")
+keymap.set("n", "gr", "<Plug>(coc-references)")
+keymap.set("n", "<C-n>", "CocNext<CR>")
+keymap.set("n", "<C-p>", "CocPrev<CR>")
