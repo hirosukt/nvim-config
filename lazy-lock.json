@@ -38,6 +38,7 @@
   "sonokai": { "branch": "master", "commit": "a90d437f1f4e48825150065987d175e2a45fa39e" },
   "telescope-symbols.nvim": { "branch": "master", "commit": "a6d0127a53d39b9fc2af75bd169d288166118aec" },
   "telescope.nvim": { "branch": "master", "commit": "c392f1b78eaaf870ca584bd698e78076ed301b26" },
+  "vim-fugitive": { "branch": "master", "commit": "64d6cafb9dcbacce18c26d7daf617ebb96b273f3" },
   "vim-highlighturl": { "branch": "master", "commit": "012fee983e03913db6ba6393307eac434999b896" },
   "vim-hybrid": { "branch": "master", "commit": "cc58baabeabc7b83768e25b852bf89c34756bf90" }
 }
