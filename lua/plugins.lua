@@ -120,7 +120,10 @@ require("lazy").setup({
         end,
     },
     {
-        "williamboman/mason-lspconfig.nvim"
+        "williamboman/mason-lspconfig.nvim",
+        config = function()
+            require("config.mason-lspconfig")
+        end
     },
     {
         "neovim/nvim-lspconfig",
@@ -148,6 +151,12 @@ require("lazy").setup({
         config = function()
             require("config.lspsaga")
         end
+    },
+    {
+        "j-hui/fidget.nvim",
+        config = function()
+            require("fidget")
+        end,
     },
 
     -- colorschemes
