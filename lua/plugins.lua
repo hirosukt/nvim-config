@@ -141,7 +141,9 @@ require("lazy").setup({
     {
         "tpope/vim-fugitive",
     },
-
+    {
+        "voldikss/vim-floaterm"
+    },
 
     -- colorschemes
     { "w0ng/vim-hybrid", lazy = true },

@@ -15,3 +15,5 @@ keymap.set("n", "<C-x>", "<cmd>bprevious <bar> bdelete #<cr>", {
     silent = true,
     desc = "delete buffer",
 })
+
+keymap.set("n", "<leader>t", "<Cmd>FloatermToggle<CR>")
