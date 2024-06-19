@@ -141,6 +141,9 @@ require("lazy").setup({
     {
         "tpope/vim-fugitive",
     },
+    {
+        "HiPhish/gradle.nvim"
+    },
 
 
     -- colorschemes
