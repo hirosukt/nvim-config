@@ -13,6 +13,7 @@ cmp.setup({
 		{ name = "buffer" },
 		{ name = "path" },
 		{ name = "cmdline" },
+        { name = "nvim_lsp_signature_help" }
 	},
 	window = {
 		completion = cmp.config.window.bordered(),

@@ -22,7 +22,7 @@ opt.showcmd = true
 opt.laststatus = 2
 opt.cmdwinheight = 5
 opt.background = dark
-opt.wrap = true
+opt.wrap = false
 opt.wrapscan = true
 opt.linebreak = trues
 opt.autoread = true
@@ -36,3 +36,9 @@ opt.pumblend = 5
 
 vim.cmd("syntax on")
 vim.cmd("colorscheme everforest")
+
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python_provider = 0
+vim.g.loaded_python3_provider = 0

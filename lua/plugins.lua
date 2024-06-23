@@ -96,7 +96,7 @@ require("lazy").setup({
     {
         "tyru/open-browser.vim",
         enabled = function()
-            if vim.g.is_win or vim.g.is_mac then
+            if vim.g.is_win then
                 return true
             else
                 return false
@@ -112,6 +112,36 @@ require("lazy").setup({
     },
     {
         "udalov/kotlin-vim"
+    },
+    {
+        "j-hui/fidget.nvim",
+        config = function()
+            require("fidget")
+        end,
+    },
+    {
+        "kevinhwang91/nvim-hlslens",
+        config = true
+    },
+    {
+        "NvChad/nvim-colorizer.lua",
+        config = true
+    },
+    {
+        "gaborvecsei/usage-tracker.nvim",
+        config = true
+    },
+    {
+        "mateuszwieloch/automkdir.nvim"
+    },
+
+    -- code completions
+
+    {
+        "prabirshrestha/vim-lsp"
+    },
+    {
+        "mattn/vim-lsp-settings"
     },
     {
         "williamboman/mason.nvim",
@@ -143,20 +173,14 @@ require("lazy").setup({
             "hrsh7th/cmp-cmdline",
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-nvim-lsp"
+            "hrsh7th/cmp-nvim-lsp",
         }
     },
     {
-        "nvimdev/lspsaga.nvim",
+        "mfussenegger/nvim-jdtls",
         config = function()
-            require("config.lspsaga")
+            require("config.jdtls")
         end
-    },
-    {
-        "j-hui/fidget.nvim",
-        config = function()
-            require("fidget")
-        end,
     },
 
     -- colorschemes
