@@ -176,12 +176,6 @@ require("lazy").setup({
             "hrsh7th/cmp-nvim-lsp",
         }
     },
-    {
-        "mfussenegger/nvim-jdtls",
-        config = function()
-            require("config.jdtls")
-        end
-    },
 
     -- colorschemes
     { "w0ng/vim-hybrid", lazy = true },
