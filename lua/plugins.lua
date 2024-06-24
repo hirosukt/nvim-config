@@ -134,17 +134,50 @@ require("lazy").setup({
     {
         "mateuszwieloch/automkdir.nvim"
     },
+    {
+        "alienman5k/jdecomp.nvim",
+        opts = {
+            decompiler = 'fernflower', -- cfr, procyon, fernflower
+            provider = {
+                cfr = {
+                    jar = os.getenv('PATH') .. '/cfr-0.152.jar'
+                },
+                procyon = {
+                    jar = os.getenv('PATH') .. '/procyon-decompiler-0.6.0.jar'
+                },
+                fernflower = {
+                    jar = os.getenv('PATH') .. '/vineflower-1.10.1.jar'
+                }
+            }
+        }   
+    },
 
     -- code completions
-
+    {
+        "artur-shaik/jc.nvim",
+        config = true,
+        dependencies = {
+            "neovim/nvim-lspconfig",
+            "hrsh7th/nvim-cmp",
+            "hrsh7th/cmp-nvim-lsp",
+            "williamboman/nvim-lsp-installer",
+            "puremourning/vimspector",
+            {
+                "mfussenegger/nvim-jdtls",
+                config = function()
+                    require("config.jdtls")
+                end
+            },
+        }
+    },
     {
         "nvimdev/lspsaga.nvim",
         config = function()
             require("config.lspsaga")
         end,
         dependencies = {
-            "nvim-treesitter/nvim-treesitter", -- optional
-            "nvim-tree/nvim-web-devicons",     -- optional
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-tree/nvim-web-devicons",
         }
     },
     {
