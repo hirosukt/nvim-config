@@ -111,9 +111,6 @@ require("lazy").setup({
         "voldikss/vim-floaterm"
     },
     {
-        "udalov/kotlin-vim"
-    },
-    {
         "j-hui/fidget.nvim",
         config = function()
             require("fidget")
@@ -153,23 +150,6 @@ require("lazy").setup({
     },
 
     -- code completions
-    {
-        "artur-shaik/jc.nvim",
-        config = true,
-        dependencies = {
-            "neovim/nvim-lspconfig",
-            "hrsh7th/nvim-cmp",
-            "hrsh7th/cmp-nvim-lsp",
-            "williamboman/nvim-lsp-installer",
-            "puremourning/vimspector",
-            {
-                "mfussenegger/nvim-jdtls",
-                config = function()
-                    require("config.jdtls")
-                end
-            },
-        }
-    },
     {
         "nvimdev/lspsaga.nvim",
         config = function()
