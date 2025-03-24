@@ -17,3 +17,5 @@ keymap.set("n", "<C-x>", "<cmd>bprevious <bar> bdelete #<cr>", {
 })
 
 keymap.set("n", "<leader>t", "<Cmd>FloatermToggle<CR>")
+keymap.set("n", "j", "gj")
+keymap.set("n", "k", "gk")

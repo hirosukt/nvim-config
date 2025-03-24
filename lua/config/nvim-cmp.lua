@@ -22,9 +22,9 @@ cmp.setup({
 	mapping = cmp.mapping.preset.insert({
 		["<C-p>"] = cmp.mapping.select_prev_item(),
 		["<C-n>"] = cmp.mapping.select_next_item(),
-		["<C-l>"] = cmp.mapping.complete(),
+		["<C-y>"] = cmp.mapping.complete(),
 		["<C-c>"] = cmp.mapping.abort(),
-		["<C-y>"] = cmp.mapping.confirm({ select = true }),
+		["<C-l>"] = cmp.mapping.confirm({ select = true }),
 	}),
 	experimental = {
 		ghost_text = false,
